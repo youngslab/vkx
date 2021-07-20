@@ -12,6 +12,6 @@ target_include_directories(vkx PUBLIC ./include)
 set_target_properties(vkx PROPERTIES
             CXX_STANDARD 17)
 
-if(PRINT_LOG)
+if(VKX_PRINT_LOG)
 	target_compile_definitions(vkx PUBLIC -DVKX_PRINT_LOG)
 endif()
