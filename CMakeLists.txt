@@ -6,7 +6,7 @@ project(vkx)
 find_package(Vulkan REQUIRED)
 find_package(glfw REQUIRED)
 
-add_library(vkx ./src/Create.cpp )
+add_library(vkx ./src/Create.cpp ./src/Enumerate.cpp)
 target_link_libraries(vkx PUBLIC Vulkan::Vulkan glfw::glfw)
 target_include_directories(vkx PUBLIC ./include)
 set_target_properties(vkx PROPERTIES
